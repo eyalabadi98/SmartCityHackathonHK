@@ -1,0 +1,14 @@
+{
+  "name": "smartcityhk",
+  "version": "1.0.0",
+  "description": "smart city hackathon",
+  "main": "blockchain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eyal Abadi",
+  "license": "ISC",
+  "dependencies": {
+    "datum-sdk": "^0.1.15"
+  }
+}
