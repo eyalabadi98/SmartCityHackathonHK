@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<script src="https://cdn.jsdelivr.net/npm/datum-sdk/dist/datum.js"></script>
+<script src="./utils.js" charset="utf-8"></script>
+
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Supply Chain Scanning</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body onload="start()">
+
+  <h1>Supply Chain Scanning</h1>
+  <!-- <img style="width: 30"src="https://banner2.kisspng.com/20180310/kuq/kisspng-bottle-medicine-medicine-bottles-5aa38fbc7608e5.0948428315206686044835.jpg" /> -->
+<form class="cf">
+  <input type="code" id="input-code" placeholder="code">
+  <input type="drugName" id="drug-name" placeholder="drug" readonly>
+  <div class="half left cf">
+    <input type="manufactured" id="input-manufactored" placeholder="Country" readonly value="Hong Kong">
+    <input type="company" id="input-company" placeholder="company" value="USP Hong Kong #434" readonly>
+    <input type="date" id="input-date" placeholder="date"  value="2018-09-01">
+  </div>
+  <div class="half right cf">
+    <input type="location" id="input-location" placeholder="location" value="-21.34343343343, +35.24345343">
+    <input type="time" id="input-time" placeholder="time" value= "04:43:03">
+    <input type="submit" value="Submit" id="input-submit" onclick="setDataScanning();return false">
+    <!-- <input type="submit" value="Submit1" id="input-submit" onclick="getAllItems();return false">
+    <input type="submit" value="Submit" id="input-submit"  onclick="addTable();return false"> -->
+  </div>
+</form>
+
+<div id="myDynamicTable" border="1">
+    <!-- <input type="button" id="create" value="Click here" onclick="Javascript:addTable()">
+    to create a Table and add some data using JavaScript -->
+</div>
+   
+
+</body>
+
+</html>

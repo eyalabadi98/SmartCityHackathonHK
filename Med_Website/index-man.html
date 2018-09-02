@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <script src="https://cdn.jsdelivr.net/npm/datum-sdk/dist/datum.js"></script>
+    <script src="./utils.js" charset="utf-8"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Drug Manufacturing</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body onload="start()">
+
+  <h1>Drug Manufacturing</h1>
+<form class="cf">
+  <input type="code" id="input-code" placeholder="code">
+  <input type="drugName" id="drug-name" placeholder="drug" value="Fentanyl">
+  <div class="half left cf">
+    <input type="manufactured" id="input-manufactored" placeholder="Country">
+    <input type="company" id="input-company" placeholder="company" value="Pzifer">
+    <input type="date" id="input-date" placeholder="date" value="2018-08-02">
+    <input type="date" id="input-country" placeholder="country" value="USA">
+  </div>
+  <div class="half right cf">
+    <input type="location" id="input-location" placeholder="location">
+    <input type="time" id="input-time" placeholder="time" readonly value= "09:23:21">
+    <input type="submit" value="Submit" id="input-submit" readonly onclick="setDataManufacturing();return false">
+    
+  </div>
+</form>
+
+
+
+</body>
+
+</html>
