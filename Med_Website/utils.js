@@ -1,5 +1,4 @@
-
-
+//Use html website to call these javascript functions.
 var seed = "perfect head ghost wagon term book sock surge zebra door adapt picture"
 //create new datum instance
 var datum
